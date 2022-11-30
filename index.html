@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta name="description" content="The Earth needs the greatest defender" />
+    <meta name="keyword" content="The Earth needs the greatest defender" />
+    <meta name="author" content="Assemble your team" />
+    <title>Assemble your team | The Earth needs the greatest defender</title>
+    <!-- Styles-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/vendors.min.css" />
+    <link href="./assets/css/styles.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- style -->
+    <style>
+      #team-chosen {
+        align-items: center;
+        gap: 4px;
+      }
+      #team-chosen h2 {
+        color: gray;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .teams-ready {
+        background-color: green;
+      }
+
+      #congratulation-modal {
+        display: grid;
+        visibility: hidden;
+        place-items: center;
+        padding: 60px 10px;
+        border-radius: 5px;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      }
+
+      #congratulation-modal h2 {
+        font-size: 20px;
+        color: black;
+        font-weight: 800;
+      }
+
+      #congratulation-modal p {
+        color: rgb(26, 218, 26);
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header id="masthead" class="text-center">
+        <h1>Assemble your team</h1>
+        <span class="sep-border"></span>
+        <h3>Make a group consists of 3 people</h3>
+      </header>
+      <div id="team-builder">
+        <!-- team choosen -->
+        <div id="team-chosen">
+          <!-- <h2>- Samuel L Jackson</h2> -->
+        </div>
+
+        <!-- input -->
+        <div id="member-input">
+          <input type="text" class="input-field" id="name-input" placeholder="Input name here..." />
+          <button id="confirm-member">Add to the team</button>
+          <button id="confirm-team" class="not-ready" type="submit">Need 3 more people</button>
+        </div>
+
+        <!-- congratulation modal -->
+      </div>
+      <div id="congratulation-modal">
+        <p>Congratulations!</p>
+        <h2>You've just assembled</h2>
+        <h2>The earth Greatest Defender!</h2>
+      </div>
+    </div>
+
+    <script src="./assets/js/vendors.min.js"></script>
+    <script type="text/javascript" src="./assets/js/scripts.js"></script>
+  </body>
+</html>
